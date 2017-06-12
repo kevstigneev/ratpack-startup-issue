@@ -53,7 +53,22 @@ The actual result: the JVM does not terminate. `jconsole` shows a thread that re
     io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:255)
     io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
     ratpack.exec.internal.DefaultExecController$ExecControllerBindingThreadFactory.lambda$newThread$0(DefaultExecController.java:136)
-    ratpack.exec.internal.DefaultExecController$ExecControllerBindingThreadFactory$$Lambda$122/497479191.run(Unknown Source)
+    ratpack.exec.internal.DefaultExecController$ExecControllerBindingThreadFactory$$Lambda$122/489070295.run(Unknown Source)
     io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
     java.lang.Thread.run(Thread.java:745)
 
+Environment
+-----------
+
+Ratpack version: 1.4.6
+
+    $ uname -a
+    Linux ke-laptop 4.4.0-78-generic #99~14.04.2-Ubuntu SMP Thu Apr 27 18:49:46 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+    $ java -version
+    openjdk version "1.8.0_111"
+    OpenJDK Runtime Environment (build 1.8.0_111-8u111-b14-3~14.04.1-b14)
+    OpenJDK 64-Bit Server VM (build 25.111-b14, mixed mode)
+
+    $ groovy -version
+    Groovy Version: 2.4.6 JVM: 1.8.0_111 Vendor: Oracle Corporation OS: Linux

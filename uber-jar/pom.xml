@@ -10,7 +10,7 @@
 
     <properties>
         <targetJdk>1.8</targetJdk>
-        <groovyVersion>2.4.10</groovyVersion>
+        <groovyVersion>2.4.6</groovyVersion>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
