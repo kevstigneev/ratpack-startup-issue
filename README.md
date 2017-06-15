@@ -31,12 +31,12 @@ The Groovy script using
 
 The actual evidence matches the expected result.
 
-### `uber-jar/`
+### `uber-jar-groovy/`
 
 Maven project building an executable JAR using the same
 [ratpack.groovy.GroovyRatpackMain](https://ratpack.io/manual/1.4.6/api/ratpack/groovy/GroovyRatpackMain.html) entrypoint.
 
-    cd uber-jar
+    cd uber-jar-groovy
     mvn package
     java -jar target/ratpack-entrypoint.jar
 
@@ -56,6 +56,20 @@ The actual result: the JVM does not terminate. `jconsole` shows a thread that re
     ratpack.exec.internal.DefaultExecController$ExecControllerBindingThreadFactory$$Lambda$122/489070295.run(Unknown Source)
     io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
     java.lang.Thread.run(Thread.java:745)
+
+
+### `uber-jar-java/`
+
+Maven project building an executable JAR using the canonical
+[ratpack.server.RatpackServer](https://ratpack.io/manual/1.4.6/api/ratpack/server/RatpackServer.html)
+entrypoint.
+
+    cd uber-jar-java
+    mvn package
+    java -jar target/ratpack-entrypoint.jar
+
+The actual result: like the previous example the JVM does not terminate.
+
 
 Environment
 -----------
